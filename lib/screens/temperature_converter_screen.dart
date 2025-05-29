@@ -92,10 +92,8 @@ class _TemperatureConverterScreenState extends State<TemperatureConverterScreen>
       }
     });
 
-    // Trigger animation for result display
-    _animationController.forward().then((_) {
-      _animationController.reset();
-    });
+    // Trigger animation for result display - but don't reset it!
+    _animationController.forward();
 
     // Provide haptic feedback
     HapticFeedback.lightImpact();
@@ -105,7 +103,7 @@ class _TemperatureConverterScreenState extends State<TemperatureConverterScreen>
   void _clearInput() {
     setState(() {
       _temperatureController.clear();
-      _currentResult = null;
+      _currentResult = null; // Only clear result when user explicitly clears
     });
     _animationController.reset();
   }
