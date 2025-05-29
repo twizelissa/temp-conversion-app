@@ -1,16 +1,62 @@
-# tempapp
+# Temperature Converter
 
-A new Flutter project.
+A Flutter app for converting temperatures between Fahrenheit and Celsius.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Convert between °F and °C
+- Input validation and error handling
+- Conversion history tracking
+- Responsive design (portrait/landscape)
+- Results displayed to 2 decimal places
 
-A few resources to get you started if this is your first Flutter project:
+## Installation
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```bash
+flutter pub get
+flutter run
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Project Structure
+
+```
+lib/
+├── main.dart
+├── models/conversion_history.dart
+├── services/temperature_service.dart
+├── widgets/
+│   ├── conversion_selector.dart
+│   ├── temperature_input.dart
+│   ├── action_buttons.dart
+│   ├── result_display.dart
+│   └── history_section.dart
+├── screens/temperature_converter_screen.dart
+└── utils/
+    ├── constants.dart
+    └── validators.dart
+```
+
+## Conversion Formulas
+
+- **F to C**: `°C = (°F - 32) × 5/9`
+- **C to F**: `°F = °C × 9/5 + 32`
+
+## Requirements Met
+
+- ✅ Bidirectional temperature conversion
+- ✅ User input with validation
+- ✅ Convert button functionality
+- ✅ 2 decimal place precision
+- ✅ Conversion history display
+- ✅ Portrait/landscape support
+
+## Usage
+
+1. Select conversion type (F to C or C to F)
+2. Enter temperature value
+3. Press Convert button
+4. View result and history
+
+## Author
+
+**[Your Name]** - Mobile Development Assignment 1
