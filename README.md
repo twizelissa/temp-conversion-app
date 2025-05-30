@@ -1,5 +1,9 @@
 # Temperature Converter
 
+![Temperature Converter App](/Assests/img1.png)
+![Temperature Converter App](/Assests/img2.png)
+![Temperature Converter App](/Assests/img3.png)
+![Temperature Converter App](/Assests/img4.png)
 A Flutter app for converting temperatures between Fahrenheit and Celsius.
 
 ## Features
@@ -59,4 +63,4 @@ lib/
 
 ## Author
 
-**[Your Name]** - Mobile Development Assignment 1
+**Elissa Twizeyimana** - Mobile Development Assignment 1
